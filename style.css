@@ -1,0 +1,316 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F58787;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.mainContainer {
+  background-image: url("images/bckg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section2 {
+  padding: 10vmin;
+  text-align: center;
+  background-color: rgba(255,255,255, 0.95);
+}
+
+.section2 > h2 {
+  font-size: 7vmin;
+  color: #19ADD8;
+}
+
+.section2 > h3 {
+  font-size: 7vmin;
+  color: #FF8000 ;
+}
+
+
+
+.title > h4 {
+  font-size: 3vmin;
+  text-align: center;
+  color: white;
+}
+
+.title > p {
+  margin-top: 25vmin;
+  font-size: 2.5vmin;
+  text-align: center;
+  color: rgb(0,0,0,0.4);
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(255,255,255,0.2);
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar a {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar a:hover {
+  color: #fff;
+  text-shadow:
+    0 0 10px #FFA004,
+    0 0 20px #FFA004,
+    0 0 40px #FFA004,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+
+.sound {
+  width: 20vmin;
+  height: 20vmin;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sound a {
+  cursor: pointer;
+  color: rgb(0,0,0,0.6);
+  font-size: 2.5vmin;
+}
+
+.sound a:hover {
+  color: #fff;
+  text-shadow:
+    0 0 10px #FFA004,
+    0 0 20px #FFA004,
+    0 0 40px #FFA004,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+  font-size: 3vmin;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  font-size: 7vmin;
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 70% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}
+
+
+.scrollFunction {
+  color: white;
+  text-align: center;
+}
+
+#row1,#row2, #row3{
+  display: flex;
+}
+
+#row2 {
+  background-color: rgb(225,225,225,0.5)
+}
+
+/* Create two equal columns that sits next to each other */
+#column1, #column2 {
+  flex: 50%;
+  padding: 10px;
+}
+
+#column1 > p {
+  text-align: left;
+  font-size: 7.5vmin;
+  padding: 80px;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pic1.jpg");
+  /*border: 2px solid #FF8000;*/
+}
+
+#column2 > p {
+  text-align: center;
+  font-size: 3.5vmin;
+  padding: 5vmin;
+  margin-top: 21vmin;
+}
+
+#column3 > p {
+  text-align: center;
+  font-size: 3.2vmin;
+  padding: 8vmin;
+  margin-top: 20vmin;
+  margin-right: 5vmin;
+}
+
+#column4 > p {
+  text-align: left;
+  font-size: 7.5vmin;
+  padding: 12vmin;
+  margin-right: 8vmin;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#column5 > p {
+  text-align: left;
+  font-size: 7.5vmin;
+  padding: 80px;
+  color: white;
+  margin-right: -130px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pic3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#column6 > p {
+  text-align: center;
+  font-size: 3.5vmin;
+  margin-left:26vmin;
+  margin-top: 27vmin;
+}
+
+.scrolling {
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 4vmin;
+  margin-top: -11vmin;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+.scrolling p:hover {
+  font-size: 4.5vmin;
+}
+
+/*RESOURCE PAGE */
+
+.mainContents {
+  background-image: url("images/res2.jpg");
+  text-align: center;
+  font-size:8vmin;
+  color: white;
+  font-family: monospace;
+}
+
+hr {
+  border:none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4vmin;
+  grid-row-gap: 4vmin;
+  padding: 7vmin;
+}
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 2vmin;
+  background-color: rgba(255, 255, 204, 0.3);
+
+}
+
+#locationGrid {
+  background-color: #F58787;
+}
+
+#professionalGrid {
+  background-color: #EA5D8C;
+    /*background-image: url("images/res2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.contentTitle {
+  display: flex;
+  font-size: 3vmin;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.contentLoc {
+  display: flex;
+  color: #FADBD8;
+  text-align: center;
+  font-size: 2.5vmin;
+  font-family: 'Inter', sans-serif;
+}
+
+.contentHours {
+  display: flex;
+  color: #FADBD8;
+  text-align: center;
+  font-size: 2.5vmin;
+  font-family: 'Inter', sans-serif;
+}
+
+.contentNumber {
+  display: flex;
+  color: #FADBD8;
+  text-align: center;
+  font-size: 2.5vmin;
+  font-family: 'Inter', sans-serif;
+}
+/*@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }*/

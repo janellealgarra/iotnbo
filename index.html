@@ -2,19 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class ="mainContainer">
 
       <div class = "navbar">
         <a href="index.html"> Home <br>⌂ </a>
-        <a href="resources.html"> Resources <br>﹀ </a>
-        <a href="#"> The Social Dilemma <br> ﹀ </a>
-        <a href="#"> Contact Us <br> ﹀ </a>
+        <a href="resources.html"> Resources <br> ﹀ </a>
+        <a href="article.html"> The Social Dilemma <br> ﹀ </a>
+        <a href="contact.html"> Contact Us <br> ﹀ </a>
       </div>
 
       <div class="typewriter">
@@ -48,12 +49,12 @@
 
       <div class="section2">
           <h2>Let's talk about what we're <u><i>not</i></u> talking about</h2>
-        <div id="row1">
+        <div class="row1" id = 'row1' data-aos="fade-up">
           <div id="column1">
             <p> There are about <br><b>3.3 million Filipinos</b> who live with a <i>depressive disorder</i></p>
           </div>
           <div id="column2">
-            <p> According to the Department of Health, suicide rates are 2.5 males and 1.7 females for every 100,000 persons.
+            <p> According to the <i>Department of Health</i>, suicide rates are 2.5 males and 1.7 females for every 100,000 persons.
               The World Health Organization (WHO) also reported over 2,000 cases of suicide from 2000 to 2012, most
               of which involved people aged 15 to 29 years old.
             </p>
@@ -61,9 +62,9 @@
 
       </div>
 
-      <div id="row2">
+      <div id="row2" data-aos="fade-up">
         <div id="column3">
-          <p> There is a scarcity of mental health professionals in the Philippines, with only a little over 500 practicing psychiatrists.
+          <p> There is a scarcity of mental health professionals in the Philippines, with only a little over <i>500 practicing psychiatrists</i>.
             The ratio presented is lower than other countries with similar income levels such as Malaysia (1.27 per 100,000) and Indonesia (0.3 per 100,000).
             Furthermore, access to mental health services is not equally distributed across the country, as most psychiatrists work in for-profit or private sectors in larger urban cities such as Metro Manila.
           </p>
@@ -74,12 +75,12 @@
 
     </div>
 
-    <div id="row3">
+    <div id="row3" data-aos="fade-up">
       <div id="column5">
         <p> In 2018, President Rodrigo Duterte signed the <b>landmark Mental Health Act</b></p>
       </div>
       <div id="column6">
-        <p> This was the first mental health act legislation in the Philippines. It outlines a framework for the integration and implementation of optimal mental health care, and
+        <p> This was the <i>first mental health act legislation</i> in the Philippines. It outlines a framework for the integration and implementation of optimal mental health care, and
           protects the rights of people with mental health conditions, their family members and industry professionals.
         </p>
       </div>
@@ -87,7 +88,7 @@
   </div>
 
     <h3>So what's the problem?</h3>
-    <p> At home is where the problem is </p>
+    <p> The problem starts at home. Living within a culture that emphasizes resilience and humor amidst pain and personal suffering makes it all the more difficult to talk about mental illness out in the open. The stigma surrounding mental illness only adds to the layers of struggle of people who suffer from various mental health conditions. </p>
 
       </div>
 
@@ -97,7 +98,9 @@
 
     </div>
 
-
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="script.js" charset="utf-8"></script>
+
+  <script> AOS.init();</script>
   </body>
 </html>

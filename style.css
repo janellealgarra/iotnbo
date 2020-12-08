@@ -21,6 +21,7 @@ body {
   padding: 10vmin;
   text-align: center;
   background-color: rgba(255,255,255, 0.95);
+
 }
 
 .section2 > h2 {
@@ -29,8 +30,12 @@ body {
 }
 
 .section2 > h3 {
-  font-size: 7vmin;
+  font-size: 10vmin;
   color: #FF8000 ;
+}
+
+.section2 > p {
+  font-size:5vmin;
 }
 
 
@@ -66,6 +71,7 @@ body {
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.5s;
 }
 
 .navbar a:hover {
@@ -73,13 +79,60 @@ body {
   text-shadow:
     0 0 10px #FFA004,
     0 0 20px #FFA004,
-    0 0 40px #FFA004,
-    0 0 40px #0ff,
-    0 0 80px #0ff,
-    0 0 90px #0ff,
-    0 0 100px #0ff,
-    0 0 150px #0ff;
+    0 0 40px #FFA004
 }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 18.5px;
+  margin-left: 16.7vmin;
+  margin-right: 16.5vmin;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+.dropdown-content {
+  position: absolute;
+  margin-left: 12.7vmin;
+  background-image: url("images/bckg.gif");
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  margin-left: 6vmin;
+}
+
+.dropdown-content a:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+
+}
+
+
+
 
 
 .sound {
@@ -94,6 +147,7 @@ body {
   cursor: pointer;
   color: rgb(0,0,0,0.6);
   font-size: 2.5vmin;
+  transition: 0.5s;
 }
 
 .sound a:hover {
@@ -148,6 +202,8 @@ body {
   display: flex;
 }
 
+/*Testing-------------------------------------*/
+
 #row2 {
   background-color: rgb(225,225,225,0.5)
 }
@@ -177,10 +233,12 @@ body {
 #column3 > p {
   text-align: center;
   font-size: 3.2vmin;
-  padding: 8vmin;
-  margin-top: 20vmin;
+  margin-left: 5vmin;
+  margin-top: 23vmin;
   margin-right: 5vmin;
+  transition: 0.5s;
 }
+
 
 #column4 > p {
   text-align: left;
@@ -205,19 +263,21 @@ body {
 
 }
 
+
 #column6 > p {
   text-align: center;
   font-size: 3.5vmin;
   margin-left:26vmin;
-  margin-top: 27vmin;
+  margin-top: 32vmin;
+  transition: 0.5s;
 }
 
-.scrolling {
+.scrolling > p {
   color: white;
   cursor: pointer;
   text-align: center;
   font-size: 4vmin;
-  margin-top: -11vmin;
+  margin-top: -12vmin;
   text-shadow:
     0 0 10px #fff,
     0 0 20px #fff,
@@ -227,10 +287,11 @@ body {
     0 0 90px #0ff,
     0 0 100px #0ff,
     0 0 150px #0ff;
+  transition: 0.3s;
 }
 
 .scrolling p:hover {
-  font-size: 4.5vmin;
+  font-size: 5vmin;
 }
 
 /*RESOURCE PAGE */
@@ -241,6 +302,22 @@ body {
   font-size:8vmin;
   color: white;
   font-family: monospace;
+
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 hr {
@@ -313,4 +390,179 @@ hr {
     display: block;
     width: 100%;
     text-align: left;
-  }*/
+*/
+
+.webLink {
+  display: flex;
+  text-align: center;
+  font-size: 2vmin;
+  font-family: 'Inter', sans-serif;
+}
+
+.grid a {
+  transition: 0.2s;
+}
+
+  .grid a:hover {
+    font-size: 3vmin;
+    background-image: none;
+    color: #FFFC00;
+  }
+
+  .grid :hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/bckg.gif");
+  }
+
+
+
+  /*----------------ARTICLE-----------*/
+  .socialHeader {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/social.png");
+    height: 60vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .socialHeader > p {
+    font-size: 10vmin;
+    color: #fff;
+      text-shadow:
+        0 0 5px #fff,
+        0 0 2px #fff
+  }
+
+#articleArea{
+    padding: 10vmin;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.95);
+  }
+
+.mainArticle {
+    background-image: url("images/bckg.gif")
+
+  }
+
+#antiSocial {
+  font-size: 8vmin;
+  padding: 8vmin;
+  margin-top: -4vmin;
+}
+
+#column1a, #column2a {
+  flex: 50%;
+  padding: 10px;
+}
+
+#column1a {
+  background-image: url("images/addict.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*border: 2px solid #FF8000;*/
+}
+
+#column1a > p {
+  font-size: 10vmin;
+  text-align: center;
+  color: white;
+  margin-top: 8vmin;
+}
+
+#row1a {
+  background-color: #CB3F34;
+  color: white;
+}
+
+#column2a > p {
+  text-align: left;
+  font-size: 3.5vmin;
+  padding: 5vmin;
+  margin-top: 10vmin;
+}
+
+#column3a > p {
+  text-align: center;
+  font-size: 4vmin;
+  margin-left: 5vmin;
+  margin-top: 15vmin;
+  margin-right: 5vmin;
+  margin-bottom: 10vmin;
+  transition: 0.5s;
+}
+
+#column4a {
+  background-image: url("images/compare.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#column4a > p {
+  text-align: left;
+  font-size: 10vmin;
+  padding: 10vmin;
+  margin-right: 8vmin;
+  color: black;
+  margin-top: 10vmin;
+  margin-bottom:5vmin;
+}
+
+#column5a {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/alone.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10vmin;
+}
+
+
+#column5a > p {
+  text-align: left;
+  font-size: 7.5vmin;
+  padding: 80px;
+  color: white;
+
+}
+
+
+#column6a > p {
+  text-align: left;
+  font-size: 4vmin;
+  margin-left: 5vmin;
+  margin-top: 15vmin;
+  margin-right: 5vmin;
+  margin-bottom: 10vmin;
+  transition: 0.5s;
+}
+
+#row3a {
+  margin-top: 10vmin;
+  color: white;
+  background-color: black;
+}
+
+#row1a,#row2a, #row3a{
+  display: flex;
+}
+
+/*Testing-------------------------------------*/
+#row2a {
+  margin-top: 10vmin;
+  background-color: #FFF8C2;
+}
+
+.mainContact > h1 {
+  font-size: 10vmin;
+  text-align: center;
+  color: #FFEB90;
+}
+
+.mainContact > h3 {
+  font-size: 8vmin;
+  text-align: center;
+  color: white;
+  margin-left: 12vmin;
+  margin-right: 12vmin;
+}

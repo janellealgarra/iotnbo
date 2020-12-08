@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Resources</title>
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -11,9 +11,18 @@
 
       <div class = "navbar">
         <a href="index.html"> Home <br>⌂ </a>
-        <a href="#"> Resources <br>﹀ </a>
-        <a href="#"> The Social Dilemma <br> ﹀ </a>
-        <a href="#"> Contact Us <br> ﹀ </a>
+
+        <div class="dropdown">
+           <button class="dropbtn">Resources <br>﹀
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#professionalGrid">Contacts</a>
+           </div>
+         </div>
+
+        <a href="article.html"> The Social Dilemma <br> ﹀ </a>
+        <a href="contact.html"> Contact Us <br> ﹀ </a>
       </div>
 
     </div>
@@ -24,12 +33,12 @@
         <hr>
           <div class ="grid" id="locationGrid">
           </div>
+          <hr>
+          <p><b>Health Professionals</b></p>
+        <hr>
+          <div class ="grid" id="professionalGrid">
+          </div>
 
-          <hr>
-            <p><b>Health Professionals</b></p>
-          <hr>
-            <div class ="grid" id="professionalGrid">
-            </div>
         </div>
 
 
